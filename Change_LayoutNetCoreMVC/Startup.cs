@@ -61,8 +61,10 @@ namespace Change_LayoutNetCoreMVC
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+                    //template: "{controller=Home}/{action=Index}/{id?}");
+                    //Dieu huong ve trang member/index
+                template: "{controller=Members}/{action=Index}/{id?}"); 
+        });
         }
     }
 }
